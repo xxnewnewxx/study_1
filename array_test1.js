@@ -15,3 +15,11 @@ let input_data3 = [1, 2, 3, 4, 5];
 
 let data3 = input_data3[input_data3.length - 1];
 console.log(data3);
+
+// 문제4 오늘 날씨는 매우 흐림 으로 출력 되도록하세요
+
+let good = ["오늘", "날씨는", "매우", "맑음"];
+
+good[3] = "흐림";
+
+console.log(good);
