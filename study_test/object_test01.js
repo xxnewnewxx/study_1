@@ -34,7 +34,3 @@ console.log(site_1.name);
 site_2.name = "이퍼";
 
 console.log(site_2.name);
-
-site_2.name = "산타";
-
-console.log(site_2.name);
