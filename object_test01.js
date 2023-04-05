@@ -30,3 +30,7 @@ console.log(site_1.name);
 //   객체 값 변경
 //   2번째 id의 값을 '이퍼'로 변경하시오
 // }
+
+site_2.name = "이퍼";
+
+console.log(site_2.name);
