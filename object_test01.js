@@ -10,18 +10,18 @@
 // }
 
 let site_1 = {
-    id : '1'
-    name : '웹페'
+  id: "1",
+  name: "웹페",
 };
 
 let site_2 = {
-    id : '1'
-    name : '이지'
+  id: "1",
+  name: "이지",
 };
 
 let site_3 = {
-    id : '1'
-    name : '단순'
+  id: "1",
+  name: "단순",
 };
 
 console.log(site_1.name);
