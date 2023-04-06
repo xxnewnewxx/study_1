@@ -45,3 +45,7 @@ console.log(site_2.name);
 // }
 
 console.log(site_3.entries);
+
+//   문제  위의 배열의 값을 가지고 객체의 '단순'을 출력하시오
+
+console.log(site_3.name);
