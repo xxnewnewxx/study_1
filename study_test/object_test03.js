@@ -84,3 +84,9 @@ console.log(result_user);
   { id: 2, name: '윤진섭', age: 24, height: 177 },
   { id: 3, name: '윤국현', age: 22, height: 175 }
 ] */
+
+{
+  const result_user = users.map((item) => item.name[0] == "윤");
+  return;
+}
+console.log(result_user);
