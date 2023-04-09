@@ -113,3 +113,10 @@ console.log(re_web);
 const rere_web = webtoons.filter((item) => item.title == "전지적 독자 시점");
 
 console.log(rere_web);
+
+// 문제 4. naver에서 만든 웹툰들의 정보만 보여주세요.
+// console.log(search_list);
+
+const made_web = webtoons.filter((item) => item.company == "naver");
+
+console.log(made_web);
