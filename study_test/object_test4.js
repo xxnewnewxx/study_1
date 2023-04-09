@@ -106,3 +106,10 @@ const web2 = {
 const re_web = Object.assign(webtoons, web2);
 
 console.log(re_web);
+
+// 문제 2. title이 전자적 독자 시점인 webtoon의 정보만 보여주세요.
+// console.log(search_list);
+
+const rere_web = webtoons.filter((item) => item.title == "전지적 독자 시점");
+
+console.log(rere_web);
