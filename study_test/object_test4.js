@@ -120,3 +120,17 @@ console.log(rere_web);
 const made_web = webtoons.filter((item) => item.company == "naver");
 
 console.log(made_web);
+
+
+// 문제 5. "나혼자만 레벨업"의 genre이 이상합니다. "판타지"로 바꿔주세요.
+// console.log(change_list);
+
+
+
+
+const web_genre = webtoons.map((item) => {
+if(item.title == "나혼자만 레벨업" ){
+  item.genre = "판타지";
+
+}
+console.log(webtoons);
