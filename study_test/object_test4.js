@@ -134,3 +134,15 @@ if(item.title == "나혼자만 레벨업" ){
 
 }
 console.log(webtoons);
+
+
+// 문제 3. genre이 일상물인 webtoon들의 정보만 보여주세요.
+// console.log(search_list);
+
+
+const rrr_web = webtoons.map((item) => {
+  if(item.genre == "일상물" ){
+   
+    console.log(rrr_web); 
+  }}
+ 
