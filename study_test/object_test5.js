@@ -85,6 +85,7 @@ const movies = [
 }
 
 {
-  const movies = movies.filter((item) => item >= "어드벤처");
+  const movies = movies.filter((item) => item.장르 == "어드벤처");
+  return;
   console.log(movies);
 }
