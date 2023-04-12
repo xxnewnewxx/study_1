@@ -1,4 +1,4 @@
-const movies = [
+const n_movies = [
   {
     id: 001,
     제목: "너의 이름은",
@@ -77,15 +77,22 @@ const movies = [
   },
 ];
 
-{
-  // 1. 장르가 어드벤쳐인 영화의 제목만 보여주세요.
-  const input_data = movies;
-  const ouput_data = input_data;
-  console.log(ouput_data);
-}
+// {
+//   // 1. 장르가 어드벤쳐인 영화의 제목만 보여주세요.
+//   const input_data = movies;
+//   const ouput_data = input_data;
+//   console.log(ouput_data);
+// }
 
 {
-  const movies = movies.filter((item) => item.장르 == "어드벤처");
+  const n_movies = n_movies.find((item) => item.장르 == "어드벤처");
   return;
-  console.log(movies);
 }
+
+// 2. 신카이 마코토 감독이 만든 영화들의 장르를 보여주세요.
+
+// {
+//   const movie = movies.filter((item) => item.감독 == "신카이 마코토");
+//   return;
+// }
+// console.log(movie);
