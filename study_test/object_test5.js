@@ -85,9 +85,10 @@ const n_movies = [
 // }
 
 {
-  const n_movies = n_movies.find((item) => item.장르 == "어드벤처");
+  const n_movies = n_movies.filter((item) => item.장르.includes("어드벤처"));
   return;
 }
+console.log(n_movies);
 
 // 2. 신카이 마코토 감독이 만든 영화들의 장르를 보여주세요.
 
