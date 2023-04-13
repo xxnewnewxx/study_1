@@ -84,19 +84,20 @@ const n_movies = [
 //   console.log(ouput_data);
 // }
 
-// {
-//   const n_movies = n_movies.filter((item) => item.장르.includes('어드벤처'));
-//   return;
-// }
-// console.log(n_movies);
+{
+  const J_movies = n_movies.filter((item) => item.장르("어드벤처"));
+  if (item.length > 0) {
+    console.log(item[0]);
+  }
+}
 
 // const j_movie = n_movies.findIndex((item) => item.장르 == "어드벤처");
 // if (item.장르 == "어드벤처") {
 //   console.log(n_movies[index]);
 // }
 
-n_movies.forEach((item) => {
-  if (item.장르 == "어드벤처") {
-    console.log(item.장르);
-  }
-});
+// n_movies.forEach((item) => {
+//   if (item.장르 == "어드벤처") {
+//     console.log(item.장르);
+//   }
+// });

@@ -73,9 +73,9 @@ console.log(users[3]);
 // height가 170 이하인 user만 출력하시오
 {
   const result_user = users.filter((item) => item.height >= 170);
-  return;
+  console.log(result_user);
 }
-console.log(result_user);
+
 // 5번 문제 (심화)
 // name의 첫 글자가 '윤'으로 시작하는 이름만 출력하시오
 
