@@ -86,8 +86,12 @@ const n_movies = [
 
 {
   const input_data = n_movies;
+  // n_movies를 input_data에 대입해준다.
+
+  // ouput_data 에 filter로 조건을 준 어드벤처가 포함된 장르의 정보를 아웃풋 데이터에 담아준다
   const ouput_data = input_data.filter(
     (item) => item.장르.includes == "어드벤처"
+    // item객체안의 장르라는 배열 안에 어드벤쳐가 포함되어있는지 true 조건만 ouput_data에 반환된다
   );
 
   console.log(ouput_data);
