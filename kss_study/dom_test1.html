@@ -21,14 +21,15 @@
   <body>
     <form>
       <div id="first_box">
-        <p>Hello Javascript</p>
+        <p test_obj>Hello Javascript</p>
+
+        <button onclick="test()">글자가 변경됐습니다"</button>
       </div>
     </form>
     <script>
-      const mode = document.getElementById("first_box");
-      mode.addEventListener("Hello 자바스크립트") {
-          mode.innerText = "글자가 변경됐습니다";
-      } ;
+      function test() {
+        document.getElementById("test_obj").innerText = "반갑습니다";
+      }
     </script>
   </body>
 </html>
