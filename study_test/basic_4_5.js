@@ -78,6 +78,26 @@ const webtoons = [
   },
 ];
 
+// let added_list = webtoons.push({
+//   id: 8,
+//   title: "프론트앤드 개발자가 되는길",
+//   genre: "스릴러",
+//   contribute: {
+//     writer: "김성용강사",
+//     illustrator: "김성용강사",
+//     authorship: "김성용강사",
+//     company: "KoreaIT",
+//   },
+// });
+// console.log(added_list);
+// console.log(webtoons);
+
+// let a = webtoons.find((mov) => mov.title === "전지적 독자 시점");
+// console.log(a);
+
+// let search_list = webtoons.filter((el) => el.title === "전지적 독자 시점");
+// console.log(search_list);
+
 //   {
 //     const result_user = users.filter((item) => item.name == "배상아");
 //     console.log(result_user);
@@ -94,9 +114,69 @@ const webtoons = [
 // 문제 3. genre이 일상물인 webtoon들의 정보만 보여주세요.
 // console.log(search_list);
 
+//다은풀이
 // let rrr_web = webtoons.filter((item) => item.genre == "일상물");
 
 // console.log(rrr_web);
+
+// **진섭님 풀이**
+// 출력방법 1 (for -> 정상)
+// for (i = 0; i < webtoons.length; i++) {
+//   if (webtoons[i].genre === "일상물") {
+//     console.log(webtoons[i]);
+//   }
+// }
+
+// **진섭님 풀이**
+// 출력방법 3 (find -> find 로 하면 첫번째 한번만 출력된다. 다른방법은?)
+// let search_list = webtoons.find((mov) => mov.genre === "일상물");
+// console.log(search_list);
+
+// **진섭님 풀이**
+// for (i = 0; i < webtoons.length; i++) {
+//   let search_list = webtoons.find((mov) => mov.genre === "일상물");
+// }
+// console.log(search_list);
+
+// 문제 4. naver에서 만든 웹툰들의 정보만 보여주세요. (상아님문제)
+// console.log(search_list);
+//상아님 풀이
+// let search_list = webtoons.filter(
+//   (el) => el["contribute"]["company"] === "naver"
+// );
+// console.log(search_list);
+
+// 진섭님 풀이
+
+// let search_list = webtoons.filter((mov) => mov.contribute.company === "naver");
+// console.log(search_list);
+
+// 출력방법 3 (find + for 문으로 출력하려는데 왜 안되지?) --진섭님 풀이
+// for (i = 0; i < webtoons.length; i++) {
+//   let search_list = webtoons.find((mov) => mov.contribute.company === "naver");
+//   console.log(search_list);
+// }
+
+// 출력방법 4 (forEach -> 정상)  -- 진섭님 풀이
+// webtoons.forEach((mov) => {
+//   if (mov.contribute.company === "naver") {
+//     console.log(mov);
+//   }
+// });
+
+// 문제 5. "나혼자만 레벨업"의 genre이 이상합니다. "판타지"로 바꿔주세요. -- 진섭님 문제
+// console.log(change_list);
+
+// 출력방법 1 (find -> 정상) --진섭님 풀이
+// let change_list = webtoons.find((mov) => mov.title === "나혼자만 레벨업");
+// change_list.genre = "판타지";
+// console.log(change_list);
+
+// let change_list = webtoons.map((el) =>
+//   // 그렇지 않으면 object를 return
+//   el.title === "나혼자만 레벨업" ? { ...el, genre: "판타지" } : el
+// );
+// console.log(change_list);
 
 // 문제 6. 혼자서 작업하고 있는 즉, writer와 illustrator 같은 webtoon들의 정보만 보여주세요
 // console.log(search_list);
@@ -131,11 +211,11 @@ const webtoons = [
 
 let w_web = webtoons.filter((item) => {
   if (
-    item.writer == "소망" &&
-    item.writer == "이모세" &&
-    item.writer == "SIU"
+    item.contribute.writer == "소망" &&
+    item.contribute.writer == "이모세" &&
+    item.contribute.writer == "SIU"
   ) {
-    console.log(item.writer);
+    console.log(item.contribute.writer);
   } else {
     console.log("정보가없습니다");
   }
