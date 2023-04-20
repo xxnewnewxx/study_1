@@ -40,10 +40,10 @@ console.log(newUser);
 
 // console.log(users[3]);
 
-{
-  const result_user = users.filter((item) => item.name == "배상아");
-  console.log(result_user);
-}
+// // {
+// //   const result_user = users.filter((item) => item.name == "배상아");
+// //   console.log(result_user);
+// }
 
 {
   const result_user_ = users.map((item) => {

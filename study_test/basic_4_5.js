@@ -77,6 +77,19 @@ const webtoons = [
     },
   },
 ];
+// 문제 7. 작가중에 이상하게 이름이 올라가있는 사람을 지워주고 자연스럽게 수정해주세요 해당 작품만 보여주세요
+// console.log(change_list);
+// let j_webtoon = webtoons.filter(
+//   (el_item) => el_item.contribute.writer == ["이지형"]
+// );
+// console.log(j_webtoon);
+
+webtoons.map((e) => {
+  if (typeof e.contribute.writer === "object") {
+    e.contribute.writer = "이산시";
+  }
+  console.log(...webtoons);
+});
 
 // let added_list = webtoons.push({
 //   id: 8,
@@ -209,14 +222,18 @@ const webtoons = [
 //   }
 // });
 
-let w_web = webtoons.filter((item) => {
-  if (
-    item.contribute.writer == "소망" &&
-    item.contribute.writer == "이모세" &&
-    item.contribute.writer == "SIU"
-  ) {
-    console.log(item.contribute.writer);
-  } else {
-    console.log("정보가없습니다");
-  }
-});
+// let w_web = webtoons.filter((item) => {
+//   if (
+//     item.contribute.writer == "소망" &&
+//     item.contribute.writer == "이모세" &&
+//     item.contribute.writer == "SIU"
+//   ) {
+//     console.log(item.contribute.writer);
+//   } else {
+//     console.log("정보가없습니다");
+//   }
+// });
+
+// for (let i = 0; i < Object.keys(팝업).length; i++) {
+//   console.log(팝업[Object.keys(팝업)[i]].tab_name);
+// }
