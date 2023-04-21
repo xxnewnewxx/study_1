@@ -4,6 +4,13 @@ const user = {
   height: 190,
 };
 
+// 문제2. 값이 “김성용”인 속성의 key 찾기
+
+const kk = Object.keys(user);
+console.log(kk);
+const result = kk.find((key) => user[key] === "김성용");
+console.log(result);
+
 // 문제1. 위의 객체를 아래의 메소드를 이용하여 반환 값을 출력 하고 각 메소드의 기능을 정의할 것
 
 /* 
@@ -16,8 +23,8 @@ const user = {
 
 //   (1) user[”key”], user.key
 
-console.log(user.name, user.age, user.height);
-console.log(user["key"]);
+// console.log(user.name, user.age, user.height);
+// console.log(user["key"]);
 
 // {
 //   for (variable in user) {
@@ -57,8 +64,8 @@ console.log(user["key"]);
 // }
 
 // // for in문은 객체의 키를 하나씩 가져온다
-{
-  for (const key in user) {
-    console.log(user[key]);
-  }
-}
+// {
+//   for (const key in user) {
+//     console.log(user[key]);
+//   }
+// }
