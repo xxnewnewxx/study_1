@@ -167,7 +167,10 @@ const students = [
 // k_result.name = "장보고";
 // console.log(k_result);
 
-let h = students.map((item) =>
-  item.name === "홍길동" ? { ...item, name: "장보고" } : item
-);
-console.log(h);
+// let h = students.map((item) =>
+//   item.name === "홍길동" ? { ...item, name: "장보고" } : item
+// );
+// console.log(h);
+
+let m = students.filter((item) => item.id);
+console.log(item.id);
