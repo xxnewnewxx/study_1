@@ -72,5 +72,5 @@ const users = [
 // console.log(change_list);
 
 let mm = users.find((el) => el.name == "김성용");
-mm.name = "김복숭아";
+mm.name = "이키위";
 console.log(users);
