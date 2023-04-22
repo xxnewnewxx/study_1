@@ -71,6 +71,14 @@ const users = [
 // change_list.genre = "판타지";
 // console.log(change_list);
 
-let mm = users.find((el) => el.name == "김성용");
+// let mm = users.find((el) => el.name == "김성용");
+// mm.name = "이키위";
+// console.log(users);
+
+let mm = users.find(
+  (el) => el.name == "김성용" && users.find((em) => em.age == "32")
+);
+//파인드 조건을 2개를 줘서 해당 하는 값 변경하고 모든 객체 출력하기
 mm.name = "이키위";
+mm.age = 55;
 console.log(users);
