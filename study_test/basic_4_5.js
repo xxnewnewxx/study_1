@@ -77,19 +77,41 @@ const webtoons = [
     },
   },
 ];
+
+// 문제 1. 해당 데이터를 추가해주세요
+/* 
+{
+        id: 8,
+        title: '프론트앤드 개발자가 되는길',
+        genre: '스릴러',
+        contribute: {
+            writer: '김성용강사',
+            illustrator: '김성용강사',
+            authorship: '김성용강사',
+            company: 'KoreaIT',
+        },
+},
+*/
+// console.log(added_list);
+
+// console.log(search_list);
+
+// 문제 3. genre이 일상물인 webtoon들의 정보만 보여주세요.
+// console.log(search_list);
+
+// 문제 4. naver에서 만든 웹툰들의 정보만 보여주세요.
+// console.log(search_list);
+
+// 문제 5. "나혼자만 레벨업"의 genre이 이상합니다. "판타지"로 바꿔주세요.
+// console.log(change_list);
+
+// 문제 6. 혼자서 작업하고 있는 즉, writer와 illustrator 같은 webtoon들의 정보만 보여주세요
+// console.log(search_list);
+
 // 문제 7. 작가중에 이상하게 이름이 올라가있는 사람을 지워주고 자연스럽게 수정해주세요 해당 작품만 보여주세요
 // console.log(change_list);
-// let j_webtoon = webtoons.filter(
-//   (el_item) => el_item.contribute.writer == ["이지형"]
-// );
-// console.log(j_webtoon);
 
-webtoons.map((e) => {
-  if (typeof e.contribute.writer === "object") {
-    e.contribute.writer = "이산시";
-  }
-  console.log(...webtoons);
-});
+//문제 1번 해당 데이터를 추가해주세요 ---------(다은 풀이)
 
 // let added_list = webtoons.push({
 //   id: 8,
@@ -105,25 +127,17 @@ webtoons.map((e) => {
 // console.log(added_list);
 // console.log(webtoons);
 
+//-----------------------------------------------------------------------------------------
+
+// 문제 2. title이 전자적 독자 시점인 webtoon의 정보만 보여주세요.
+
 // let a = webtoons.find((mov) => mov.title === "전지적 독자 시점");
 // console.log(a);
 
 // let search_list = webtoons.filter((el) => el.title === "전지적 독자 시점");
 // console.log(search_list);
 
-//   {
-//     const result_user = users.filter((item) => item.name == "배상아");
-//     console.log(result_user);
-//   }
-
-//   {
-//     const result_user_ = users.map((item) => {
-//       if (item.name == "배상아") return item;
-//       return;
-//     });
-//     console.log(result_user_);
-//   }
-
+//-----------------------------------------------------------------------------------
 // 문제 3. genre이 일상물인 webtoon들의 정보만 보여주세요.
 // console.log(search_list);
 
@@ -237,3 +251,19 @@ webtoons.map((e) => {
 // for (let i = 0; i < Object.keys(팝업).length; i++) {
 //   console.log(팝업[Object.keys(팝업)[i]].tab_name);
 // }
+
+// 문제 7. 작가중에 이상하게 이름이 올라가있는 사람을 지워주고 자연스럽게 수정해주세요 해당 작품만 보여주세요
+// console.log(change_list);
+// let j_webtoon = webtoons.filter(
+//   (el_item) => el_item.contribute.writer == ["이지형"]
+// );
+// console.log(j_webtoon);
+
+//다은풀이
+
+webtoons.map((e) => {
+  if (typeof e.contribute.writer === "object") {
+    e.contribute.writer = "이산시";
+  }
+  console.log(...webtoons);
+});
