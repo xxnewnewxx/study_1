@@ -24,17 +24,25 @@ let cat = {
 
 // console.log(cc);
 
-// 문제 캣 객체들의 나이의 합을 출력하세요
+// 문제 고양이 도도의 눈 컬러를 옐로우로 바꿔주세요
 
-let t_cat = cat.filter((item) => {
-  return typeof item.age === Number;
-});
+let d_cat = cat.find((el) => el.color.eyes === "blue");
+console.log(d_cat);
+d_cat.color.eyes = "yellow";
 
-console.log(t_cat);
+console.log(d_cat);
 
-cat.map((el) => {
-  if (typeof el.age === Number) {
-    return;
-  }
-});
-console.log(el.age);
+// // 문제 캣 객체들의 나이의 합을 출력하세요
+
+// let t_cat = cat.filter((item) => {
+//   return typeof item.age === Number;
+// });
+
+// console.log(t_cat);
+
+// cat.map((el) => {
+//   if (typeof el.age === Number) {
+//     return;
+//   }
+// });
+// console.log(el.age);
