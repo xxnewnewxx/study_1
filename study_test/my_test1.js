@@ -32,9 +32,9 @@ let t_cat = cat.filter((item) => {
 
 console.log(t_cat);
 
-// cat.map((el) => {
-//   if (typeof el.age === Number) {
-//     return;
-//   }
-// });
-// console.log(el.age);
+cat.map((el) => {
+  if (typeof el.age === Number) {
+    return;
+  }
+});
+console.log(el.age);
