@@ -26,11 +26,11 @@ let cat = {
 
 // 문제 고양이 도도의 눈 컬러를 옐로우로 바꿔주세요
 
-let d_cat = cat.find((el) => el.color.eyes === "blue");
-console.log(d_cat);
-d_cat.color.eyes = "yellow";
+// let d_cat = cat.find((el) => el.color.eyes === "blue");
+// console.log(d_cat);
+// d_cat.color.eyes = "yellow";
 
-console.log(d_cat);
+// console.log(d_cat);
 
 // // 문제 캣 객체들의 나이의 합을 출력하세요
 
@@ -46,3 +46,7 @@ console.log(d_cat);
 //   }
 // });
 // console.log(el.age);
+
+// 문제 위 객체의 총 고양이 갯수를 구하세요
+let count = Object.keys(cat).length;
+console.log(count);
