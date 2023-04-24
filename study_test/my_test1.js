@@ -75,3 +75,11 @@ let result = {
 };
 
 console.log(result);
+
+// 문제 고양이 오드리의 나이를 11로 바꿔주세요
+
+let dd_cat = cat.find((el) => el.color.age === 8);
+console.log(d_cat);
+el.color.age = 11;
+
+console.log(dd_cat);
