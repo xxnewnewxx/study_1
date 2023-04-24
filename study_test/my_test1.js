@@ -50,3 +50,28 @@ let cat = {
 // 문제 위 객체의 총 고양이 갯수를 구하세요
 let count = Object.keys(cat).length;
 console.log(count);
+
+//문제  유저 추가하기
+
+//   id: 3,
+//   name: "moo",
+//   age: 10,
+//   color: {
+//     eyes: "yellow",
+//     body: "black",
+
+let n_user = {
+  name: "moo",
+  age: 10,
+  color: {
+    eyes: "yellow",
+    body: "black",
+  },
+};
+
+let result = {
+  ...cat,
+  ...n_user,
+};
+
+console.log(result);
