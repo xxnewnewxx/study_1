@@ -90,3 +90,16 @@ let h = cat.map((item) =>
   item.name === "dodo" ? { ...item, name: "coco" } : item
 );
 console.log(h);
+
+//문제  모든 고양이 나이의 합을 구하세요
+
+let temp = 0;
+
+cat
+  .map((value) => {
+    const sum = value.age[0] + value.age[1];
+    return sum;
+  })
+  .forEach((v) => (temp = temp + v));
+
+console.log(temp);
