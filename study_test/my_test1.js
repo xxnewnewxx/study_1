@@ -83,3 +83,10 @@ console.log(dd_cat);
 el.color.age = 11;
 
 console.log(dd_cat);
+
+// 문제 고양이 도도의 이름을 찾아서 코코로 바꾸는데 맵을 이용하세요
+
+let h = cat.map((item) =>
+  item.name === "dodo" ? { ...item, name: "coco" } : item
+);
+console.log(h);
