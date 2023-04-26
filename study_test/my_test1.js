@@ -106,6 +106,14 @@ console.log(result);
 
 // 고양이 성별을 추가로 넣어주세요
 
-let gender = cat.push("gender");
-console.log(gender);
-console.log(cat);
+// let gender = cat.push("gender");
+// console.log(gender);
+// console.log(cat);
+
+// 문제 고양이 도도의 나이를 2로 바꿔주세요
+
+let dodo_cat = cat.find((el) => el.color.age === 3);
+
+el.color.age = 2;
+
+console.log(dodo_cat);
