@@ -91,5 +91,5 @@ let n_movie = movies.filter((item) => item.감독 == "신카이 마코토");
 // console.log(n_movie);
 
 for (i = 0; i < n_movie.length; i++) {
-  console.log(n_movie[i].장르);
+  console.log(n_movie[i].장르);  //이거 접근방법 질문하기
 }

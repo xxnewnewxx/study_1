@@ -78,28 +78,34 @@ console.log(result);
 
 // 문제 고양이 오드리의 나이를 11로 바꿔주세요
 
-let dd_cat = cat.find((el) => el.color.age === 8);
-console.log(dd_cat);
-el.color.age = 11;
+// let dd_cat = cat.find((el) => el.color.age === 8);
+// console.log(dd_cat);
+// el.color.age = 11;
 
-console.log(dd_cat);
+// console.log(dd_cat);
 
 // 문제 고양이 도도의 이름을 찾아서 코코로 바꾸는데 맵을 이용하세요
 
-let h = cat.map((item) =>
-  item.name === "dodo" ? { ...item, name: "coco" } : item
-);
-console.log(h);
+// let h = cat.map((item) =>
+//   item.name === "dodo" ? { ...item, name: "coco" } : item
+// );
+// console.log(h);
 
 //문제  모든 고양이 나이의 합을 구하세요
 
-let temp = 0;
+// let temp = 0;
 
-cat
-  .map((value) => {
-    const sum = value.age[0] + value.age[1];
-    return sum;
-  })
-  .forEach((v) => (temp = temp + v));
+// cat
+//   .map((value) => {
+//     const sum = value.age[0] + value.age[1];
+//     return sum;
+//   })
+//   .forEach((v) => (temp = temp + v));
 
-console.log(temp);
+// console.log(temp);
+
+// 고양이 성별을 추가로 넣어주세요
+
+let gender = cat.push("gender");
+console.log(gender);
+console.log(cat);
