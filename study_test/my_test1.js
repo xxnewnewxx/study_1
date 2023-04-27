@@ -112,8 +112,38 @@ console.log(result);
 
 // 문제 고양이 도도의 나이를 2로 바꿔주세요
 
-let dodo_cat = cat.find((el) => el.color.age === 3);
+// let dodo_cat = cat.find((el) => el.color.age === 3);
 
-el.color.age = 2;
+// el.color.age = 2;
 
-console.log(dodo_cat);
+// console.log(dodo_cat);
+
+//문제  유저 3개 추가하기
+
+//   id: 3,
+//   name: "moo",
+//   age: 10,
+//   color: {
+//     eyes: "yellow",
+//     body: "black",
+
+let new_user = {
+  name: "vovo",
+  age: 15,
+  color: {
+    eyes: "yellow",
+    body: "black",
+  },
+  name: "Yebbi",
+  age: 7,
+  color: {
+    eyes: "yellow",
+    body: "white",
+  },
+  name: "santa",
+  age: 5,
+  color: {
+    eyes: "yellow",
+    body: "yellow",
+  },
+};
