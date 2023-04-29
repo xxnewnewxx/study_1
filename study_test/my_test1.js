@@ -127,23 +127,31 @@ console.log(result);
 //     eyes: "yellow",
 //     body: "black",
 
-let new_user = {
-  name: "vovo",
-  age: 15,
-  color: {
-    eyes: "yellow",
-    body: "black",
-  },
-  name: "Yebbi",
-  age: 7,
-  color: {
-    eyes: "yellow",
-    body: "white",
-  },
-  name: "santa",
-  age: 5,
-  color: {
-    eyes: "yellow",
-    body: "yellow",
-  },
-};
+// let new_user = {
+//   name: "vovo",
+//   age: 15,
+//   color: {
+//     eyes: "yellow",
+//     body: "black",
+//   },
+//   name: "Yebbi",
+//   age: 7,
+//   color: {
+//     eyes: "yellow",
+//     body: "white",
+//   },
+//   name: "santa",
+//   age: 5,
+//   color: {
+//     eyes: "yellow",
+//     body: "yellow",
+//   },
+// };
+
+// 문제 고양이 오드리의 나이를 1로 바꿔주세요
+
+let odri = cat.find((el) => el.color.age === 8);
+
+el.color.age = 1;
+
+console.log(odri);
