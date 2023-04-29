@@ -112,7 +112,7 @@ console.log(webtoons);
 {
   webtoons.map((el) => {
     if (typeof el.contribute.writer === "object") {
-      el.contribute.writer = "산타언니";
+      el.contribute.writer = "zl존 산타";
     }
     return {
       ...el,
