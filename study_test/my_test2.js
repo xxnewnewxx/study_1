@@ -29,3 +29,14 @@ let output = [input_data[0], input_data[1]];
 let a = input_data[0];
 let b = input_data[1];
 console.log(a + b);
+
+// 문제 출력 40, 50이 나오게하세요
+// {
+//   let input_data = [10, 20, 30, 40, 50];
+//   console.log(output_data); // [30, 40]
+// }
+
+let n_data = [10, 20, 30, 40, 50];
+if (n_data.length > 1) {
+  console.log(n_data[3], n_data[4]);
+}
