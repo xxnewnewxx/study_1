@@ -89,6 +89,23 @@
       }
 
       //<p>2.탭을 선택하면 선택한 탭의 배경과 글자의색이 바뀌도록 하시오</p>
+
+      let block = document.getElementsByClassName("block");
+
+      function handleClick(event) {
+        console.log(event.target);
+        console.log(event.target.classList);
+
+        if (event.target.classList[1] === "clicked") {
+          event.target.classList.remove("clicked");
+        } else {
+          for (var i = 0; i < block.length; i++) {
+            block[i].classList.remove("clicked");
+          }
+
+          event.target.classList.add("clicked");
+        }
+      }
     </script>
   </body>
 </html>
