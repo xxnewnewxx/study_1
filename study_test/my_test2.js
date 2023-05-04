@@ -40,3 +40,14 @@ let n_data = [10, 20, 30, 40, 50];
 if (n_data.length > 1) {
   console.log(n_data[3], n_data[4]);
 }
+
+// 문제 출력 30, 40이 나오게하세요
+// {
+//   let input_data = [10, 20, 30, 40, 50];
+//   console.log(output_data); // [30, 40]
+// }
+
+let nn_data = [10, 20, 30, 40, 50];
+if (nn_data.length > 1) {
+  console.log(n_data[2], n_data[3]);
+}
